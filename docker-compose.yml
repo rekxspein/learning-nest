@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:14.1-alpine    
+    environment:
+      - POSTGRES_USER=makudo
+      - POSTGRES_PASSWORD=narudo
+      - POSTGRES_DB=learning-nest-db
+    ports:
+      - '5434:5434'
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    networks:
+      - learning-nest
+networks:
+  learning-nest:

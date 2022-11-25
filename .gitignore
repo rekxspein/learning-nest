@@ -34,6 +34,9 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-#environment variables
 .env
-.env.local
+
+db
+dbredis
+dbminio
+firebase-admin-config.json
