@@ -7,7 +7,7 @@ services:
       - POSTGRES_PASSWORD=narudo
       - POSTGRES_DB=learning-nest-db
     ports:
-      - '5434:5434'
+      - '7000:5432'
     volumes:
       - ./db:/var/lib/postgresql/data
     networks:
